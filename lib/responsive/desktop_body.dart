@@ -1,9 +1,9 @@
 
-import 'package:anime_world/animepage.dart';
-import 'package:anime_world/appbar/appbar.dart';
-import 'package:anime_world/responsive/desktop/anime_images.dart';
+import 'package:anime01/animepage.dart';
+import 'package:anime01/appbar/appbar.dart';
+import 'package:anime01/responsive/desktop/anime_images.dart';
 
-import 'package:anime_world/responsive/dropdown.dart';
+import 'package:anime01/responsive/dropdown.dart';
 import 'package:flutter/material.dart';
 
 

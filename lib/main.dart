@@ -1,11 +1,11 @@
 // import 'dart:convert' as convert;
 import 'dart:convert';
 
-import 'package:anime_world/responsive/desktop_body.dart';
-import 'package:anime_world/responsive/mobile_body.dart';
-import 'package:anime_world/responsive/responsive_layout.dart';
-import 'package:anime_world/responsive/tab_body.dart';
-import 'package:anime_world/themes/theme.dart';
+import 'package:anime01/responsive/desktop_body.dart';
+import 'package:anime01/responsive/mobile_body.dart';
+import 'package:anime01/responsive/responsive_layout.dart';
+import 'package:anime01/responsive/tab_body.dart';
+import 'package:anime01/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

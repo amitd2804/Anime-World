@@ -1,11 +1,11 @@
 // import 'package:anime_world/appbar/appbar.dart';
 import 'dart:convert';
 
-import 'package:anime_world/appbar/appbar.dart';
-import 'package:anime_world/appbar/my_box.dart';
-import 'package:anime_world/responsive/dropdown.dart';
+import 'package:anime01/appbar/appbar.dart';
+import 'package:anime01/appbar/my_box.dart';
+import 'package:anime01/responsive/dropdown.dart';
 import 'package:http/http.dart' as http;
-import 'package:anime_world/appbar/my_tile.dart';
+import 'package:anime01/appbar/my_tile.dart';
 import 'package:flutter/material.dart';
 
 class TabletScaffold extends StatefulWidget {

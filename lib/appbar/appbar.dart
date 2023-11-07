@@ -1,6 +1,6 @@
 
-import 'package:anime_world/myintro/intropage.dart';
-import 'package:anime_world/loginpage/loginbox.dart';
+import 'package:anime01/myintro/intropage.dart';
+import 'package:anime01/loginpage/loginbox.dart';
 import 'package:flutter/material.dart';
 
 

@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:anime_world/appbar/appbar.dart';
-import 'package:anime_world/responsive/tab_body.dart';
+import 'package:anime01/appbar/appbar.dart';
+import 'package:anime01/responsive/tab_body.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 

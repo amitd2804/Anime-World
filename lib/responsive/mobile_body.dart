@@ -2,11 +2,11 @@
 
 
 import 'dart:convert';
-import 'package:anime_world/animepage.dart';
-import 'package:anime_world/responsive/dropdown.dart';
-import 'package:anime_world/responsive/star_rating.dart';
+import 'package:anime01/animepage.dart';
+import 'package:anime01/responsive/dropdown.dart';
+import 'package:anime01/responsive/star_rating.dart';
 import 'package:http/http.dart' as http;
-import 'package:anime_world/appbar/appbar.dart';
+import 'package:anime01/appbar/appbar.dart';
 import 'package:flutter/material.dart';
 
 
