@@ -1,6 +1,8 @@
 
-import 'package:anime01/myintro/intropage.dart';
+
+
 import 'package:anime01/loginpage/loginbox.dart';
+import 'package:anime01/myintro/intropage.dart';
 import 'package:flutter/material.dart';
 
 
@@ -60,7 +62,13 @@ Widget myDrawer(context) {
               fit: BoxFit.cover,),
         
       ),
-          TextButton(
+          ElevatedButton(
+            style: ButtonStyle(
+            
+  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+    RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(8),
+      side: const BorderSide(color: Color.fromARGB(108, 1, 1, 1))))),
             onPressed: () {
                  Navigator.push(
                  context,
@@ -110,9 +118,9 @@ Widget myDrawer(context) {
       //   ),
       // ),
          
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 70),
-          child: const ListTile( 
+          child: ListTile( 
           leading: Icon(Icons.logout,color: Colors.white,),
           title: Text('LOGOUT',
           style: TextStyle(fontWeight: FontWeight.bold,

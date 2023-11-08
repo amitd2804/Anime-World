@@ -37,10 +37,10 @@ import 'package:flutter/material.dart';
     var animeList = animes.keys.toList();
     
    return Container( 
-    margin: EdgeInsets.all(10),
+    margin: const EdgeInsets.all(10),
      child: GridView.builder(
       itemCount: animeList.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 5,
       childAspectRatio: 0.7
      ), itemBuilder: (context, index){
@@ -61,6 +61,13 @@ import 'package:flutter/material.dart';
                     Container(
                       height: 200,
                       width: 150,
+                      decoration: BoxDecoration(
+              border: Border.all(color: const Color.fromARGB(255, 35, 34, 34),),
+              borderRadius: BorderRadius.circular(15),
+              
+              image: DecorationImage(image: NetworkImage(
+        animes[animeList[index].toString()]), fit: BoxFit.cover),
+             ),
                       child: InkWell(
                         onHover: (hover) {
                 print(index);
@@ -79,15 +86,8 @@ import 'package:flutter/material.dart';
           title: "${animeList[index]}",),),);
               },
                       ),
-                      decoration: BoxDecoration(
-              border: Border.all(color: Colors.white,),
-              borderRadius: BorderRadius.circular(15),
-              
-              image: DecorationImage(image: NetworkImage(
-        animes[animeList[index].toString()]), fit: BoxFit.cover),
-             ),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                      TextButton(
                       onPressed: (){
                       Navigator.push(

@@ -10,7 +10,12 @@ class IntroPage extends StatefulWidget {
   State<IntroPage> createState() => _IntroPage();
 }
 
-class _IntroPage extends State<IntroPage> {
+  class _IntroPage extends State<IntroPage> {
+
+  final Shader linearGradient = const LinearGradient(
+  colors: <Color>[Color.fromARGB(255, 255, 0, 0), Color.fromARGB(255, 130, 0, 0), Color.fromARGB(255, 107, 86, 86)],
+  ).createShader(const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold( backgroundColor: Colors.black,
@@ -48,11 +53,11 @@ class _IntroPage extends State<IntroPage> {
               ),
             ),
                  
-                  padding: EdgeInsets.only(left: 50),
+                  padding: const EdgeInsets.only(left: 50),
               child: Column(children: [
                 Row(
                   children: [
-                    Container( margin: EdgeInsets.all(10), padding: EdgeInsets.all(15),
+                    Container( margin: const EdgeInsets.all(10), padding: const EdgeInsets.all(15),
                     height: 200, width: 400,
                     decoration: BoxDecoration(
                     // border: Border.all(
@@ -71,12 +76,12 @@ class _IntroPage extends State<IntroPage> {
          TextSpan(
         text: 'A M I T / 아 미 트 \n',
         style: GoogleFonts.merienda(
-          fontSize: 40,
+          fontSize: 45,
           fontWeight: FontWeight.bold,
-          color: Color.fromARGB(255, 255, 17, 0))),
+          foreground: Paint()..shader = linearGradient)),
       TextSpan(
         text: 'F L U T T E R  D E V E L O P E R',
-        style:  GoogleFonts.alice(fontSize: 22,color: const Color.fromARGB(255, 255, 0, 0),)),
+        style:  GoogleFonts.alice(fontSize: 24,color: const Color.fromARGB(255, 255, 0, 0),)),
       // TextSpan(
       //   text: 'FLUTTER',
       //   style:  GoogleFonts.akshar(fontSize: 28,color: Colors.blueAccent,)),
@@ -85,11 +90,11 @@ class _IntroPage extends State<IntroPage> {
   ),
 ), 
 ),
-        SizedBox(height: 50,),
+        const SizedBox(height: 50,),
         Container(
           height: 200,
           width: 300,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
            image: DecorationImage(
             image: NetworkImage(
             'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-1024.png'),
@@ -101,7 +106,6 @@ class _IntroPage extends State<IntroPage> {
         Container(
           height: 80,
           width: double.infinity,
-          color: const Color.fromARGB(0, 255, 193, 7),
           child: Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
            children: [
             Material(
@@ -109,49 +113,49 @@ class _IntroPage extends State<IntroPage> {
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn2.iconfinder.com/data/icons/social-icons-32/512/GITHUB-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
              Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn2.iconfinder.com/data/icons/free-social-media-16/24/LinkedIn-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
              Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
              Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-02-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
              Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-05-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
              Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-03-512.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
             Material(
-              shape: RoundedRectangleBorder(
+              shape: RoundedRectangleBorder( 
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.network('https://cdn1.iconfinder.com/data/icons/black-socicons/512/whatsapp-1024.png',
-              fit: BoxFit.cover, height: 28,),
+              fit: BoxFit.cover, height: 28, color: const Color.fromARGB(0, 0, 0, 0),),
             ),
            ],
           ),
@@ -162,13 +166,11 @@ class _IntroPage extends State<IntroPage> {
                 ),
                 Container( 
                   height: 500, width: 280,
-                  margin: EdgeInsets.only(left: 150),
-                  decoration: BoxDecoration( 
+                  margin: const EdgeInsets.only(left: 150),
+                  decoration: const BoxDecoration( 
                     // color: Colors.deepOrange,
                     image: DecorationImage(image: AssetImage('assets/images/gojo.png',),
-                    alignment: Alignment.topRight, fit: BoxFit.cover,),
-                    
-                  ),
+                    alignment: Alignment.topRight, fit: BoxFit.cover,),),
                 ),
               ],
             ),
